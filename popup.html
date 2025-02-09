@@ -64,7 +64,7 @@
 
         </style>
         <script>
-
+         let timer = 1000; //set your own desire time which after the popup should show
             function show_news_popup() {
                 const popup = document.getElementById("news_popup");
                 popup.style.display = "block";
@@ -76,7 +76,7 @@
             }
 
             window.addEventListener("load", function () {
-                setTimeout(show_news_popup, 1000);
+                setTimeout(show_news_popup, timer);
             });
         </script>
 
